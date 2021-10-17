@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="newDetail.css">
+    <script type="text/javascript" src="newScript.js"></script>
+
+
+    <title>Game Mania Detalhes</title>
+</head>
+
+<body   onload=itemName()>
+
+    <header>
+        <div class="head">
+
+            <div class="headerTop">
+                <div class="headerTopLeft">
+                    <img src="newImg/Menu.svg">
+                    <!-- MOBILE FOTO DO TOPO  -->
+                    <div class="mobHeadImg">
+                        <img class="mobHeadImage" src="newImg/mobgtav.jpg">
+                        <span class="mobLeftArrow" style="color: white">&#171;</span>
+                        <span class="mobRightArrow" style="color: white">&#187;</span>
+                    </div>
+                </div>
+                <div class="headerTopLogo">
+                    <p class="topLogoTxt"><strong><span>G</span>ame mani<span>A</span></strong></p>
+                </div>
+
+                <div class="headerTopRight">
+                    <img id="idFind" src="newImg/Lupa.svg">
+                    <img id="idCart" src="newImg/cart.svg">
+                    <img src="newImg/user.svg">
+                </div>
+
+            </div>
+            <div class="headerBot">
+                <ul>
+                    <li><a href="newIndex.html">Home</a></li>
+                    <li><a href="#">Jogos</a></li>
+                    <li><a href="#">Aparelhos</a></li>
+                    <li><a href="#">Smartphones</a></li>
+                    <li><a href="#">Acessórios</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+    </header>
+
+
+    <div class="itemName">
+        <span id="itemName"> </span>  <span id="inner"></span>
+    </div>
+
+    <div class="contDetails">
+
+        <div class="imgPrice">
+            <div class="img">
+                <img src="newImg/V.jpg">
+            </div>
+
+            <div class="price">
+                <div class="precos">
+                    <span class="riscado">R$ 120,00</span>
+                    <span class="precoAtual">R$ 99,00</span>
+                    <span class="detailPreco">até 6 de R$ 9,90 sem juros<br>R$ 90,00 à vista</span>
+                </div>
+
+                <div class="selParcel">
+                    <select>
+                        <option value="0" checked>Parcelamento</option>
+                        <option value="1">1x de R$ 99,00</option>
+                        <option value="1">2x de R$ 49,50 sem juros</option>
+                        <option value="1">3x de R$ 33,00 sem juros</option>
+                        <option value="1">4x de R$ 24,75 sem juros</option>
+                        <option value="1">5x de R$ 19,80 sem juros</option>
+                        <option value="1">6x de R$ 16,50 sem juros</option>
+
+                    </select>
+
+                    <div class="deliver">
+                        <select>
+                            <option value="0" checked>Prazo de entrega</option>
+                            <option value="1">Padrão: Até 15 dias úteis</option>
+                            <option value="2">Rápida: Até 7 dias úteis</option>
+                            <option value="1">Expressa: Até 3 dias úteis</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="finalPrice">
+                    VALOR FINAL:
+                    Em JS pegar VALUE dos SELECT de PACELA e ENTREGA e colocar neste innerHTML, calcular os dois valores
+                    e mostrar ao user.<br>
+                    <button type="button">Comprar</button>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <div class="contProdTxt">
+
+        <div class="descProduto">
+            <span style="font-size: 1.3em;">GTA V jogo Xbox One mídia física</span><br><br>
+
+            Em GTA 5, a Rockstar marca o retorno a Los Santos em um de seus projetos mais ambiciosos graças a uma
+            área
+            de jogo maior que a de GTA 5 e GTA San Andreas juntos e uma campanha com três protagonistas simultâneos.
+
+            Na pele de Michael (criminoso aposentado que acaba retornando à vida de crimes), Trevor (antigo
+            companheiro
+            de bandidagem de Michael e psicopata) e Franklin (faz-tudo iniciante no crime), os jogadores encontram
+            em
+            Grand Theft Auto V uma trama digna da Rockstar totalmente centrada em assaltos a banco.
+
+            O game também inova por permitir que cada personagem siga com a sua vida quando o jogador está no
+            controle
+            de seus companheiros. Desse modo, a companhia consegue um nível de imersão totalmente novo ao gênero.
+            <br><br>
+        </div>
+
+        <!-- GALERIA DE FOTOS DOS ITEMS -->
+
+        <ul id="imgs">
+            <li><a href="#img1"><img src="newImg/gta 1.jpg" class="min"></a></li>
+            <li><a href="#img2"><img src="newImg/gta 2.jpg" class="min"></a></li>
+            <li><a href="#img3"><img src="newImg/gta 3.jpg" class="min"></a></li>
+        </ul>
+
+
+        <div class="lbox" id="img1">
+            <div class="boxImg">
+                <a href="#img3" class="btn" id="prev">&#171;</a>
+                <a href="#imgs" class="btn" id="close">X</a>
+                <img src="newImg/gta 1.jpg">
+                <a href="#img2" class="btn" id="next">&#187;</a>
+
+            </div>
+        </div>
+
+        <div class="lbox" id="img2">
+            <div class="boxImg">
+                <a href="#img1" class="btn" id="prev">&#171;</a>
+                <a href="#imgs" class="btn" id="close">X</a>
+                <img src="newImg/gta 2.jpg">
+                <a href="#img3" class="btn" id="next">&#187;</a>
+
+            </div>
+        </div>
+
+
+        <div class="lbox" id="img3">
+            <div class="boxImg">
+                <a href="#img2" class="btn" id="prev">&#171;</a>
+                <a href="#imgs" class="btn" id="close">X</a>
+                <img src="newImg/gta 3.jpg">
+                <a href="#img1" class="btn" id="next">&#187;</a>
+
+            </div>
+        </div>
+
+
+        <!-- DEPOIMENTOS DOS COMPRADORES -->
+        <div class="depoimentos">
+            <span style="font-size: 1.3em;">Depoimentos:</span><br><br>
+            Michael de Santa:<br>
+            <span style="font-size: 0.8em;">Uma obra de arte, digno de um filme de Hollywood!!!</span><br><br>
+
+            Franklin Clinton:<br>
+
+            <span style="font-size: 0.8em;">Esse jogo é explosivo!</span><br><br>
+
+            Trevor Phillips:<br>
+
+            <span style="font-size: 0.8em;">Gostei muito! Teve uma boa direção de arte, bons profissionais
+                envolvido! Também preciso elogiar a loja que cumpriu com tudo o que foi acordado e entregou o jogo
+                com antecedência!</span><br><br>
+
+            <span id="scrapHide" class="scrapHide">
+                Ada Wong:<br>
+
+                <span style="font-size: 0.8em;">Hmpf...</span><br><br>
+
+                Desmond Miles:<br>
+
+                <span style="font-size: 0.8em;">É bom demais! Jogar este game, é como se eu pudesse viver outras
+                    vidas!</span><br><br></span>
+
+            <br><span id="moreScrap" class="moreScrap" onclick="showScrap()">Mais depoimentos ... </span>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        var adria = document.getElementById('scrapHide');
+        var btn = document.getElementById('moreScrap');
+
+        function showScrap() {
+            if (adria.style.display === "inline") {
+                adria.style.display = "none";
+                btn.innerHTML = "Mais depoimentos ... "
+            } else {
+                adria.style.display = "inline";
+                btn.innerHTML = "Menos depoimentos ... "
+            }
+        }
+    </script>
+
+    <div class="faq">
+
+        <div class="margin">
+            <br>
+            <span style="font-size: 1.8em; margin-top: 50px;">
+                Dúvidas Frequentes
+            </span>
+            <br><br>
+            <span class="faqItem">
+                Qual é o prazo da entrega dos meus produtos?
+            </span>
+
+            <span class="faqItem">
+                Em quantos dias posso desistir da minha compra?
+            </span>
+
+            <span class="faqItem">
+                Meu produto chegou com defeito, como fazer a troca?
+            </span>
+
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <footer>
+        <div class="footerLeft">
+            Mapa do site:<br><br>
+
+            Home<br>
+            Jogos<br>
+            Aparelhos<br>
+            Smartphones<br>
+            Acessórios<br>
+            Login<br>
+            Sobre
+        </div>
+
+        <div class="footerMid">
+
+            <p class="topLogoTxt"><strong><span>G</span>ame mani<span>A</span></strong></p>
+            <div class="socialMediaIcons">
+                <img src="newImg/faceIcon.svg">
+                <img src="newImg/ttIcon.svg">
+                <img src="newImg/instaIcon.svg">
+            </div>
+
+            <br>
+            <br>
+            Rua Edward Kenway, 4823<br>
+            Vila James - São Paulo - SP<br>
+            Telefones: 11 3353-5535<br><br>
+
+            email: informacao@gamemania.com.br
+
+        </div>
+
+        <div class="footerRight">
+            Horário de atendimento:<br><br>
+
+            Segunda à Sexta<br>
+            09h às 18h<br><br>
+
+            Sábados, Domingos<br>
+            e Feriados<br>
+            09h às 14h
+        </div>
+
+
+    </footer>
+
+
+</body>
+
+</html>
