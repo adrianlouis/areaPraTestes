@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/e12642acd8.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>BPC</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <i class="fas fa-bars iHeader"></i>
+            <h1>Controle de Planilhas</h1>
+
+        </div>
+    </header>
+    <main>
+        <table id="tabelaExt" class="tbExt">
+            <h2>Extintores</h2>
+            <tr>
+                <th>Número</th>
+                <th>Tipo</th>
+                <th>Recarga</th>
+                <th>Reteste</th>
+                <th>Avaria</th>
+            </tr>
+            <tr id="tabelaTemplate">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+          
+        </table>
+        <div class="acoes">
+            <button type="button" onclick="addTable()" >Novo</button>
+            <button type="button" onclick="templates()" >Editar</button>
+        </div>
+
+        <div id="acoesAdd" class="acoesAdd">
+
+            
+            <table  class="add">
+                <tr>
+                    <th>Número</th>
+                    <th>Tipo</th>
+                    <th>Recarga</th>
+                    <th>Reteste</th>
+                    <th>Avaria</th>
+                </tr>
+                <tr>
+                    <td><input id="numAdd" type="text"></td>
+                    <td><input id="tipAdd" type="text"></td>
+                    <td><input id="recAdd" type="text"></td>
+                    <td><input id="retAdd" type="text"></td>
+                    <td><input id="avaAdd" type="text"></td>
+                </tr>
+            </table>
+            
+            <div class="acoes">
+                <button type="button">Adicionar</button>
+                <button type="button">Cancelar</button>
+            </div>
+        </div>
+            
+
+    </main>
+
+    
+</body>
+</html>
